@@ -8,10 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <aside>
+        <img src="background.avif" alt="">
+    </aside>
     <h1>Login Page</h1>
     <form action="">
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name">
+        <h2>Let's do this</h2>
+        <fieldset>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" placeholder="Steve" name="firstName">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" placeholder="Jobs" name="lastName">
+        </fieldset>
+
+        <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" id="phone">
+        </fieldset>
+
+        <fieldset>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <label for="confirmPass">Confirm Password</label>
+            <input type="password" name="confPass" id="confirmPass">
+        </fieldset>
+
+        <button type="submit">Create Account</button>
     </form>
 </body>
 </html>
