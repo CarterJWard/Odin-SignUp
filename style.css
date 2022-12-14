@@ -1,7 +1,9 @@
+@import url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf');
 body {
     display: flex;
     flex-direction: row;
     margin: 0;
+    
 }
 
 #content {
@@ -36,8 +38,13 @@ input {
     border: 1px solid black;
 }
 
-img {
-    max-height: 100vh;
+aside {
+    background-image: url('background.avif');
+    background-size: auto 100vh;
+    height: 100vh;
+    width: 60vh;
+    display: flex;
+    align-items: center;
 }
 
 #submitButton {
@@ -46,10 +53,32 @@ img {
     background-color: green;
     color: white;
     border-radius: 25px;
+    font-weight: 600;
 }
 
 #submitButton:hover {
     background-color: darkgreen;
+}
+
+#banner {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.65;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#banner img{
+    width: 15%;
+}
+
+#banner h1 {
+    font-size: 8vh;
+    margin: 0;
+    font-family: 'Norse';
 }
 
 footer,
