@@ -18,22 +18,34 @@
         <form action="">
             <h2>Let's do this</h2>
             <fieldset>
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" placeholder="Steve" name="firstName">
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" placeholder="Jobs" name="lastName">
+                <div class="formItem">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="Steve" name="firstName">
+                </div>
+                <div class="formItem">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Jobs" name="lastName">
+                </div>
             </fieldset>
             <fieldset>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <label for="phone">Phone Number</label>
-                <input type="number" name="phone" id="phone">
+                <div class="formItem">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="formItem">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="phone" id="phone">
+                </div>
             </fieldset>
             <fieldset>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <label for="confirmPass">Confirm Password</label>
-                <input type="password" name="confPass" id="confirmPass">
+                <div class="formItem">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="formItem">
+                    <label for="confirmPass">Confirm Password</label>
+                    <input type="password" name="confPass" id="confirmPass">
+                </div>
             </fieldset>
             <button type="submit" id="submitButton">Create Account</button>
         </form>
