@@ -1,8 +1,10 @@
 @import url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 body {
     display: flex;
     flex-direction: row;
     margin: 0;
+    font-family: 'Roboto';
     
 }
 
@@ -17,7 +19,10 @@ form {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    margin: 0px 10px;
+    padding: 15px 15px 30px 15px;
+    flex-grow: 0;
+    box-shadow: 0px 15px 10px -15px #111;  
+    margin-bottom: 7px;
 }
 
 fieldset {
@@ -30,12 +35,20 @@ fieldset {
 .formItem {
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
+    color: rgb(69, 66, 66);
+}
+
+#formTitle {
+    margin: 0;
+    margin-bottom: 25px;
 }
 
 input {
-    width: 50%;
+    width: 60%;
     border-radius: 4px;
-    border: 1px solid black;
+    border: 1px solid rgb(69, 66, 66);;
+    height: 2.5vh;
 }
 
 aside {
@@ -43,8 +56,6 @@ aside {
     background-size: auto 100vh;
     height: 100vh;
     width: 60vh;
-    display: flex;
-    align-items: center;
 }
 
 #submitButton {
@@ -52,8 +63,11 @@ aside {
     height: 60px;
     background-color: green;
     color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     font-weight: 600;
+    margin: 20px 0px 0px 20px;
+    font-size: 1.2em;
+    border: none;
 }
 
 #submitButton:hover {
@@ -69,6 +83,7 @@ aside {
     opacity: 0.65;
     width: 100%;
     padding-top: 10px;
+    margin-top: 20vh;
 }
 
 #banner img{
@@ -83,6 +98,30 @@ aside {
 
 footer,
 header {
-    background-color: antiquewhite;
+    background-color: #f5f8fa;
+}
+
+footer {
     flex-grow: 1;
+}
+
+#intro {
+    padding: 5vh 3vh 1vh 2vh;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    color: rgb(69, 66, 66);
+    margin: 50px auto auto 20px;
+    font-weight: 100;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

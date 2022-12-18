@@ -18,9 +18,19 @@
         
     </aside>
     <div id="content">
-        <header>Title</header>
-        <form action="">
-            <h2>Let's do this!</h2>
+        <header>
+            <h2 id="intro">
+                This is not a real online service! You need something like this in your life to help
+                you realize your deepest dreams.
+                <br>
+                Sign up <i>now</i> to get started.
+                <br><br>
+                You <i>Know</i> you want to.
+            </h2>
+
+        </header>
+        <form action="" id="signUp">
+            <h2 id="formTitle">Let's do this!</h2>
             <fieldset>
                 <div class="formItem">
                     <label for="first_name">First Name</label>
@@ -33,7 +43,7 @@
             </fieldset>
             <fieldset>
                 <div class="formItem">
-                    <label for="email">Email:</label>
+                    <label for="email">Email</label>
                     <input type="email" name="email" id="email">
                 </div>
                 <div class="formItem">
@@ -51,10 +61,10 @@
                     <input type="password" name="confPass" id="confirmPass">
                 </div>
             </fieldset>
-            <button type="submit" id="submitButton">Create Account</button>
         </form>
         <footer>
-            lower
+            <button type="submit" id="submitButton">Create Account</button>
+            <p>Already have an account? <a href="/login">Log In</a></p>
         </footer>
     </div>
 </body>
